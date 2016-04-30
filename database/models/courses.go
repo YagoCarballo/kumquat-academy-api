@@ -34,7 +34,7 @@ func (model CoursesModel) ReadCourse(id uint32) (*Course, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -79,7 +79,7 @@ func (model CoursesModel) GetCourseWithTitle(title string) (*Course, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

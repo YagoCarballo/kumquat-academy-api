@@ -57,7 +57,7 @@ func (model SessionModel) FindSession(accessToken string) (*Session, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -77,7 +77,7 @@ func (model SessionModel) findSessionForUserOnDevice(userId uint32, deviceId str
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

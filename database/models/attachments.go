@@ -34,7 +34,7 @@ func (model AttachmentsModel) ReadAttachment(id uint32) (*Attachment, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -63,7 +63,7 @@ func (model AttachmentsModel) FindAttachment(name string) (*Attachment, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

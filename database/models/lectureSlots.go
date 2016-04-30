@@ -38,7 +38,7 @@ func (model LectureSlotsModel) ReadLectureSlot(lectureSlotId uint32) (*LectureSl
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

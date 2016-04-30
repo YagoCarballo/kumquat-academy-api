@@ -38,7 +38,7 @@ func (model UserModel) FindUser(username string) (*User, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -58,7 +58,7 @@ func (model UserModel) FindUserWithId(userId uint32) (*User, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -76,7 +76,7 @@ func (model UserModel) FindUserWithEmail(email string) (*User, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

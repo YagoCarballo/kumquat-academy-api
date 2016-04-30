@@ -72,7 +72,7 @@ func (model ModulesModel) FindModule(id uint32) (*Module, error) {
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -107,7 +107,7 @@ func (model ModulesModel) FindModuleWithCode(code string) (*LevelModule, error) 
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error
@@ -355,7 +355,7 @@ func (model ModulesModel) GetModuleStudent(studentId uint32, moduleCode string) 
 	if query.Error != nil {
 		// If no Records found, return NIL otherwise return the error
 		switch query.Error {
-		case gorm.RecordNotFound:
+		case gorm.ErrRecordNotFound:
 			return nil, nil
 		default:
 			return nil, query.Error

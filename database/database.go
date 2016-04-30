@@ -22,7 +22,6 @@ const DBName = "golang_test"
 
 func connectWithDB() error {
 	var mysqlError, mysqlDownError error
-	var rawDatabase gorm.DB
 	var uri, dbType string
 
 	dbSettings := tools.GetSettings().Database
@@ -43,11 +42,9 @@ func connectWithDB() error {
 	}
 
 	// Connects to the Database
-	if rawDatabase, mysqlError = gorm.Open(dbType, uri); mysqlError != nil {
+	if DB, mysqlError = gorm.Open(dbType, uri); mysqlError != nil {
 		return mysqlError
 	}
-
-	DB = &rawDatabase
 
 	// Open doesn't open a connection. Validate DSN data:
 	mysqlDownError = DB.DB().Ping()
