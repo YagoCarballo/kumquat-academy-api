@@ -2,8 +2,8 @@ package models
 
 import (
 	"github.com/jinzhu/gorm"
-	"github.com/YagoCarballo/kumquat.academy.api/database"
-	. "github.com/YagoCarballo/kumquat.academy.api/constants"
+	"github.com/YagoCarballo/kumquat-academy-api/database"
+	. "github.com/YagoCarballo/kumquat-academy-api/constants"
 )
 
 type (

@@ -9,9 +9,9 @@ import (
 	. "github.com/franela/goblin"
 	"github.com/jinzhu/gorm"
 
-	"github.com/YagoCarballo/kumquat.academy.api/database"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/database"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 )
 
 // The path to the Settings file

@@ -7,8 +7,8 @@ import (
 	"net/smtp"
 	"net/textproto"
 
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 
 	emailHandler "github.com/jordan-wright/email"
 	"mime/multipart"

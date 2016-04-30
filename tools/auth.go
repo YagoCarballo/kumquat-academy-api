@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"net/http"
 
-	. "github.com/YagoCarballo/kumquat.academy.api/constants"
+	. "github.com/YagoCarballo/kumquat-academy-api/constants"
 )
 
 func ParseID(rawId string) (uint32, int, map[string]interface{}) {

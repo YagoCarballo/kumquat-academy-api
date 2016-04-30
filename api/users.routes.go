@@ -6,12 +6,12 @@ import (
 
 	"github.com/zenazn/goji/web"
 
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
-	"github.com/YagoCarballo/kumquat.academy.api/api/middlewares"
-	"github.com/YagoCarballo/kumquat.academy.api/api/endpoints"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/api/middlewares"
+	"github.com/YagoCarballo/kumquat-academy-api/api/endpoints"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 
-	. "github.com/YagoCarballo/kumquat.academy.api/constants"
+	. "github.com/YagoCarballo/kumquat-academy-api/constants"
 )
 
 type (

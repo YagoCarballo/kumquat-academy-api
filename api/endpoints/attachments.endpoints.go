@@ -7,8 +7,8 @@ import (
 	"mime/multipart"
 	"fmt"
 	"github.com/wayn3h0/go-uuid"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 	"bufio"
 )
 

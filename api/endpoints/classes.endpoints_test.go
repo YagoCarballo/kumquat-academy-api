@@ -6,7 +6,7 @@ import (
 
 	. "github.com/franela/goblin"
 
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 	"time"
 )
 

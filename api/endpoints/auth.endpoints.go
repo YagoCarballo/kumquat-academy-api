@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 
 	emailHandler "github.com/jordan-wright/email"
 )

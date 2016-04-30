@@ -2,7 +2,7 @@ package endpoints
 
 import (
 	"net/http"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 	"fmt"
 	"strings"
 )

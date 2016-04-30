@@ -3,11 +3,11 @@ package endpoints
 import (
 	"net/http"
 	"time"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 	"fmt"
 	"mime/multipart"
 	"os"
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 	"github.com/wayn3h0/go-uuid"
 )
 

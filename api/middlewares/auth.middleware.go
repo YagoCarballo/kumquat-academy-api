@@ -10,8 +10,8 @@ import (
 	"github.com/zenazn/goji/web"
 	"github.com/dvsekhvalnov/jose2go"
 
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 )
 
 type Permissions struct {

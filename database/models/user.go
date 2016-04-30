@@ -11,7 +11,7 @@ import (
 	"github.com/albrow/forms"
 	"github.com/jinzhu/gorm"
 	"github.com/wayn3h0/go-uuid"
-	"github.com/YagoCarballo/kumquat.academy.api/database"
+	"github.com/YagoCarballo/kumquat-academy-api/database"
 )
 
 type (

@@ -5,10 +5,10 @@ import (
 	"testing"
 	"net/http"
 
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 
 	. "github.com/franela/goblin"
-	. "github.com/YagoCarballo/kumquat.academy.api/constants"
+	. "github.com/YagoCarballo/kumquat-academy-api/constants"
 )
 
 func Test_Database_Permissions(t *testing.T) {

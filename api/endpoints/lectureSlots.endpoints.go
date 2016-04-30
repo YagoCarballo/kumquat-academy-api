@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 	"net/http"
-	"github.com/YagoCarballo/kumquat.academy.api/database/models"
+	"github.com/YagoCarballo/kumquat-academy-api/database/models"
 )
 
 // CRUD

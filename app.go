@@ -13,10 +13,10 @@ import (
 	"github.com/zenazn/goji/web/middleware"
 
 	// My Libs
-	"github.com/YagoCarballo/kumquat.academy.api/api"
-	"github.com/YagoCarballo/kumquat.academy.api/database"
-	"github.com/YagoCarballo/kumquat.academy.api/tools"
 	"crypto/rsa"
+	"github.com/YagoCarballo/kumquat-academy-api/api"
+	"github.com/YagoCarballo/kumquat-academy-api/database"
+	"github.com/YagoCarballo/kumquat-academy-api/tools"
 )
 
 // The path to the Settings file
