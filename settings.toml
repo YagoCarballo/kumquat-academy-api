@@ -1,0 +1,20 @@
+title="Kumquat Academy"
+description="Kumquat Academy - Learning Platform"
+[database]
+type="MySQL"
+[database.mysql]
+username="KumquatAcademy"
+password="KumquatAcademy"
+host="localhost:3306"
+name="KumquatAcademy"
+[database.sqlite]
+path=""
+[server]
+port=3030
+debug=false
+privateKey="./key.pem"
+publicKey="./key.pub"
+uploadsPath="./attachments"
+[api]
+prefix="/api"
+version=1
